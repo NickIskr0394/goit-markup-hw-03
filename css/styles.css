@@ -164,6 +164,11 @@ img {
   color: var(--hero-title-color);
   background-color: var(--btn-bg-color);
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 .section-one-btn:hover,
 .section-one-btn:focus {
