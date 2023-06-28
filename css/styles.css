@@ -1,33 +1,90 @@
 :root {
   --primary-text-color: #434455;
   --primary-logo-text-color: #4d5ae5;
-  --header-logo-text-color: #2E2F42;
-  --secondary-text-color: #2E2F42;
-  --accent-text-color: #404BBF;
-  --secondary-background-color: #2E2F42;
-  --primary-background-color: #FFFFFF;
-  --hero-title-color: #FFFFFF;
-  --footer-text-color: #F4F4FD;
+  --header-logo-text-color: #2e2f42;
+  --secondary-text-color: #2e2f42;
+  --accent-text-color: #404bbf;
+  --secondary-background-color: #2e2f42;
+  --primary-background-color: #ffffff;
+  --hero-title-color: #ffffff;
+  --footer-text-color: #f4f4fd;
   --btn-bg-color: #4d5ae5;
-  --btn-bg-color-active: #404BBF;
-  --team-bg-color: #F4F4FD;
-  --footer-logo-text-color: #F4F4FD;
+  --btn-bg-color-active: #404bbf;
+  --team-bg-color: #f4f4fd;
+  --footer-logo-text-color: #f4f4fd;
   --portfolio-btn-text-color: #4d5ae5;
-  --portfolio-btn-bg-color: #F4F4FD;
-  --portfolio-btn-text-color-active:#FFFFFF;
+  --portfolio-btn-bg-color: #f4f4fd;
+  --portfolio-btn-text-color-active: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
   font-size: 16px;
 }
+
+/* Reset */
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* HEADER */
+
+.header-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  gap: 8px;
 }
 
 .header-logo {
@@ -42,7 +99,10 @@ body {
 .accent {
   color: var(--header-logo-text-color);
 }
-
+.header-list {
+  display: flex;
+  gap: 8px;
+}
 .nav-link {
   font-weight: 500;
   line-height: calc(24 / 16);
@@ -57,7 +117,10 @@ body {
 .header-address {
   font-style: normal;
 }
-
+.header-address-list {
+  display: flex;
+  gap: 8px;
+}
 .contact-link {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
@@ -68,6 +131,7 @@ body {
 .contact-link:focus {
   color: var(--accent-text-color);
 }
+
 /* Hero */
 
 .section-one {
@@ -90,7 +154,7 @@ body {
   letter-spacing: 0.04em;
   color: var(--hero-title-color);
   background-color: var(--btn-bg-color);
-cursor: pointer;
+  cursor: pointer;
 }
 .section-one-btn:hover,
 .section-one-btn:focus {
@@ -109,7 +173,6 @@ cursor: pointer;
 .section-two-paragraph {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  
 }
 /* Section3 */
 
@@ -159,7 +222,6 @@ cursor: pointer;
   background-color: var(--secondary-background-color);
 }
 
-
 .accentt {
   color: var(--footer-logo-text-color);
 }
@@ -181,13 +243,12 @@ cursor: pointer;
   letter-spacing: 0.04em;
   color: var(--portfolio-btn-text-color);
   background-color: var(--portfolio-btn-bg-color);
-cursor: pointer;
+  cursor: pointer;
 }
 .page-btns:hover,
 .page-btns:focus {
   color: var(--portfolio-btn-text-color-active);
   background-color: var(--btn-bg-color-active);
-  
 }
 
 .img-title {
