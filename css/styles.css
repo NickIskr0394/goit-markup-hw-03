@@ -76,11 +76,14 @@ img {
 
 /* HEADER */
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
