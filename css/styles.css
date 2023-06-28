@@ -89,6 +89,7 @@ img {
 .header-nav {
   display: flex;
   gap: 8px;
+  align-items: center;
 }
 
 .header-logo {
@@ -99,6 +100,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-logo-text-color);
+  margin-right: 76px;
 }
 .accent {
   color: var(--header-logo-text-color);
